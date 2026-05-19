@@ -1,0 +1,122 @@
+site_name: "Ali Hosseinpouran"
+site_url: "https://theloggicalone.github.io/"
+site_author: "Ali Hosseinpouran"
+site_description: "Decision Intelligence Scientist, ML Researcher, and Educator"
+
+repo_url: "https://github.com/TheLoggicalOne/TheLoggicalOne.github.io"
+repo_name: "GitHub"
+edit_uri: ""
+
+copyright: "Copyright © 2026 Ali Hosseinpouran"
+
+theme:
+  name: material
+  language: en
+
+  logo: assets/logo.png
+  favicon: assets/logo.png
+
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+    - scheme: default
+      primary: indigo
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+
+plugins:
+  - search
+  - glightbox
+  - mkdocs-jupyter:
+      execute: false
+
+markdown_extensions:
+
+  # Code
+  - pymdownx.highlight:
+      anchor_linenums: true
+
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+
+  # Callouts
+  - admonition
+  - pymdownx.details
+
+  # Tabs
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  # Math
+  - pymdownx.arithmatex:
+      generic: true
+      inline_syntax:
+        - dollar
+        - round
+
+  # Tables / attributes
+  - attr_list
+  - md_in_html
+
+  # Emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  # Table of contents
+  - toc:
+      permalink: true
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
+  - js/math.js
+
+nav:
+  - Home: index.md
+
+  - About:
+      - about.md
+
+  - Articles:
+      - articles/index.md
+
+  - Concepts:
+      - concepts/index.md
+
+  - Projects:
+      - projects/index.md
+
+  - Courses:
+      - courses/index.md
+
+  - Labs:
+      - labs/index.md
+
+  - Consultings:
+    - consulting.md
+
+    
