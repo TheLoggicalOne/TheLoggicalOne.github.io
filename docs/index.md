@@ -1,5 +1,22 @@
 # Decision Intelligence Hub
 
+# Most Organizations Don't Have a Data Problem. They Have a Decision Problem
+
+Data → Dashboards → KPIs → ML Predictions
+
+Yet the final decision is still made using intuition, politics, and proxy metrics.
+
+I help organizations redesign decision pipelines so that models, analytics, and strategy align with what actually matters
+
+Decision Intelligence Scientist
+Bayesian Modeling • Causal Inference • Decision Science
+
+[How I Work]
+
+[Read the Articles]
+
+[Courses & Workshops]
+
 ## Data → Structural Model → Optimal Decision
 
 **Practical frameworks, probabilistic thinking, causal reasoning, and structural models for  
