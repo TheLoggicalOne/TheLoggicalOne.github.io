@@ -1,242 +1,132 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
+<div class="hero-wrapper" markdown>
+
 # Decision Intelligence Hub
+<div class="hero-subtitle">Data → Structural Model → Optimal Decision</div>
 
-# Most Organizations Don't Have a Data Problem. They Have a Decision Problem
+<div class="hero-text">
+Practical frameworks, probabilistic thinking, causal reasoning, and structural models for organizations that want decisions that survive reality — not just dashboards that describe the past.
+</div>
 
-Data → Dashboards → KPIs → ML Predictions
+[Read the Philosophy](#what-this-website-is-about){ .md-button .md-button--primary } 
+[Explore Consulting](#who-this-is-for){ .md-button }
 
-Yet the final decision is still made using intuition, politics, and proxy metrics.
-
-I help organizations redesign decision pipelines so that models, analytics, and strategy align with what actually matters
-
-Decision Intelligence Scientist
-Bayesian Modeling • Causal Inference • Decision Science
-
-[How I Work]
-
-[Read the Articles]
-
-[Courses & Workshops]
-
-## Data → Structural Model → Optimal Decision
-
-**Practical frameworks, probabilistic thinking, causal reasoning, and structural models for  
-organizations that want decisions that survive reality — not just dashboards that describe the past.**
+</div>
 
 ---
 
-## Most organizations have a broken decision pipeline
+<br>
 
-Many organizations believe they are “data-driven” because they have:
-- dashboards,
-- KPIs,
-- machine learning models,
-- forecasts,
-- and business intelligence tools.
+<div class="grid borderless-cards" markdown>
 
-But the actual decision pipeline often still looks like this:
+- ### For Decision-Makers
+  You want better strategic decisions, robust planning under uncertainty, utility-aligned modeling, and a deeper understanding of what analytics can and cannot do.
+  
+  [:octicons-arrow-right-24: Redesign your decision pipeline](#)
 
-```text
-Data → Dashboard → Gut Feeling → Decision
-```
+- ### For Data Scientists
+  You want to move beyond curve fitting, beyond leaderboard optimization, and beyond black-box prediction toward causal and structural reasoning.
+  
+  [:octicons-arrow-right-24: Learn structural modeling](#)
 
-or at best:
+</div>
 
-```text
+<br>
+<br>
+
+## The Pipeline Problem
+
+Many organizations believe they are “data-driven” because they have dashboards, KPIs, and machine learning models. But the actual decision pipeline often looks like this:
+
+<div class="pipeline-block">
 Data → ML Prediction → KPI Optimization → Decision
-```
+</div>
 
-This creates organizations that are:
-- precise but fragile,
-- predictive but not causal,
-- optimized for proxy metrics,
-- and blind to uncertainty.
+This creates organizations that are precise but fragile, optimized for proxy metrics, and blind to uncertainty. The result is a pipeline that works until the world changes. **And decisions change the world.**
 
-The result is a pipeline that works until the world changes.
+A prediction trained on historical data cannot reliably evaluate an intervention that changes the data-generating process. Decision-making requires counterfactual reasoning, structural understanding, and robustness under distribution shift.
 
-And decisions change the world.
+<br>
+<br>
 
----
+## Core Philosophy
 
-## The central problem
+<div class="grid borderless-cards" markdown>
 
-A prediction trained on historical data cannot reliably evaluate an intervention that changes the  
-data-generating process.
+- ### Fitting data is not understanding
+  A model can fit historical data extremely well and still fail catastrophically when decisions change the environment.
 
-This is the hidden weakness of most modern analytics systems.
+- ### The Flaw of Averages
+  Decision-makers often optimize for the “most likely” scenario while ignoring uncertainty. But averages systematically break nonlinear systems: $E[f(x)] \neq f(E[x])$.
 
-Flexible machine learning models are excellent interpolation engines.  
-But decision-making requires counterfactual reasoning, structural understanding, and robustness  
-under distribution shift.
+- ### Causal Salads
+  Organizations often optimize metrics whose relationship to real utility is poorly understood, resulting in proxy objectives and fragile decisions.
 
-That requires:
-- causal reasoning,
-- probabilistic modeling,
-- uncertainty quantification,
-- and structure-aware models.
+- ### Distributions, not points
+  A single predicted number hides uncertainty. Decision-makers need distributions, scenario analysis, and action-conditional forecasts.
 
----
+</div>
 
-## What this website is about
+<br>
+<br>
 
-This website is a practical and evolving knowledge hub for:
+## The Maturity Model of Decision-Making
 
-- Decision Intelligence
-- Bayesian & probabilistic thinking
-- Structural and causal modeling
-- Scientific decision-making
-- Organizational decision pipelines
-- Forecasting under uncertainty
-- Optimization and utility
-- The philosophy of models and inference
+We help organizations transition from intuition to structural intelligence. Where is your organization?
 
-It exists for:
-- executives,
-- analysts,
-- data scientists,
-- researchers,
-- and organizations trying to move from dashboards to decision intelligence.
+<div class="grid borderless-cards" markdown>
+
+- **Stage 0 & 1: Intuition & Anecdote**
+  No formal pipeline. Decisions come from authority, instinct, and stories.
+- **Stage 2: Expert-Driven**
+  Consultants and experts introduce frameworks and heuristics.
+- **Stage 3: Dashboard-Driven**
+  Organizations become “data-driven,” but dashboards mainly train gut feeling.
+- **Stage 4: ML-Assisted KPI Optimization**
+  Machine learning generates point predictions optimized for proxy metrics.
+- **Stage 5: Structural Decision Intelligence**
+  The organization models causal structure, uncertainty, utility, interventions, and counterfactuals.
+
+</div>
+
+<br>
 
 ---
 
-## The maturity model of organizational decision-making
+<br>
 
-### Stage 0 — Pure intuition
-No formal pipeline. Decisions come from authority and instinct.
+## Start Exploring
 
-### Stage 1 — Anecdotal reasoning
-Experience and stories guide decisions.
+<div class="grid borderless-cards" markdown>
 
-### Stage 2 — Expert-driven reasoning
-Consultants and experts introduce frameworks and heuristics.
+- ### Foundational Articles
+  * [From Curve Fitting to Structural Models](#)
+  * [The Flaw of Averages in Decision Pipelines](#)
+  * [Why Your KPIs Are a Causal Salad](#)
+  * [The Six Stages of Organizational Decision-Making](#)
 
-### Stage 3 — Dashboard-driven intuition
-Organizations become “data-driven,” but dashboards mainly train gut feeling.
+- ### Labs & Courses
+  * [Bayesian Decision-Making](#)
+  * [Solico Business Analytics Training](#)
+  * [Stochastic Optimization in the Iranian Car Market](#)
+  * [Media Mix Modeling](#)
 
-### Stage 4 — ML-assisted KPI optimization
-Machine learning generates point predictions optimized for proxy metrics.
+</div>
 
-### Stage 5 — Structural Decision Intelligence
-The organization models:
-- causal structure,
-- uncertainty,
-- utility,
-- interventions,
-- and counterfactuals.
+<br>
+<br>
 
-Most organizations are somewhere between Stage 3 and Stage 4.
+## About Ali Hosseinpouran
 
-My work is about helping them move toward Stage 5.
+I am a **Decision Intelligence Scientist** working at the intersection of probabilistic modeling, economics, causal inference, optimization, and organizational decision-making. 
 
----
+My work focuses on designing systems that transform data into decisions that remain robust when the world changes. With a background in pure mathematics, economics, and financial mathematics, I bridge the gap between rigorous scientific modeling and high-stakes executive execution.
 
-## Core ideas explored here
+> *"Fitting data is not the same as understanding the world."*
 
-### Fitting data is not understanding the world
-
-A model can fit historical data extremely well and still fail catastrophically when decisions change the environment.
-
----
-
-### The Flaw of Averages
-
-Decision-makers often optimize for the “most likely” scenario while ignoring uncertainty and  
-nonlinear effects.
-
-But:
-
-```text
-E[f(x)] ≠ f(E[x])
-```
-
-Averages systematically break nonlinear systems.
-
----
-
-### Causal salads
-
-Organizations often optimize metrics whose relationship to real utility is poorly understood.
-
-The result is a “causal salad”:
-- disconnected KPIs,
-- proxy objectives,
-- misleading optimization targets,
-- and fragile decisions.
-
----
-
-### Distributions, not point predictions
-
-A single predicted number hides uncertainty.
-
-Decision-makers need:
-- distributions,
-- scenario analysis,
-- confidence,
-- downside risk,
-- and action-conditional forecasts.
-
----
-
-## Who this is for
-
-### For decision-makers
-You want:
-- better strategic decisions,
-- robust planning under uncertainty,
-- utility-aligned modeling,
-- and a deeper understanding of what analytics can and cannot do.
-
-### For data scientists
-You want to move:
-- beyond curve fitting,
-- beyond leaderboard optimization,
-- beyond black-box prediction,
-- toward causal and structural reasoning.
-
----
-
-## Start exploring
-
-### Foundational Articles
-- From Curve Fitting to Structural Models
-- The Flaw of Averages in Decision Pipelines
-- Why Your KPIs Are a Causal Salad
-- The Six Stages of Organizational Decision-Making
-
-### Courses & Workshops
-- Solico Business Analytics Training
-- Bayesian Decision-Making
-- Decision Intelligence Workshops
-
-### Projects
-- Bayesian demand forecasting
-- Portfolio optimization
-- Media mix modeling
-- Structural forecasting systems
-
----
-
-## About me
-
-I am Ali Hosseinpouran — a Decision Intelligence Scientist working at the intersection of:
-- probabilistic modeling,
-- economics,
-- causal inference,
-- machine learning,
-- optimization,
-- and organizational decision-making.
-
-My work focuses on designing systems that transform data into decisions that remain robust when  
-the world changes.
-
-Background:
-- Pure mathematics (probability & statistics)
-- Economics
-- Financial mathematics research
-- Bayesian ML and forecasting
-- Reinforcement learning and optimization
-- Executive education and consulting
-
----
-
-> Fitting data is not the same as understanding the world.
+[Read Full Bio & Experience](#about)

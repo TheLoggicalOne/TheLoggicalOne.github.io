@@ -1,0 +1,84 @@
+/* Import modern, AI/Startup style typography */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap');
+
+/* Apply modern fonts */
+body, .md-typeset {
+  font-family: 'Inter', sans-serif;
+}
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .hero-subtitle {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+/* =========================================
+   THE HERO SECTION
+   Wide, airy, high contrast
+========================================= */
+.hero-wrapper {
+  text-align: center;
+  padding: 6rem 1rem 4rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-wrapper h1 {
+  font-size: 3.5rem !important;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  color: var(--md-primary-fg-color);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 2rem;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 3rem;
+}
+
+/* =========================================
+   "BORDERLESS" FLUID GRIDS (The Decidora Look)
+   Stripping away MkDocs default card styling
+========================================= */
+.md-typeset .grid.borderless-cards > ul > li {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  padding: 2rem 1.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border-radius: 12px;
+}
+
+/* Subtle micro-interaction on hover */
+.md-typeset .grid.borderless-cards > ul > li:hover {
+  transform: translateY(-5px);
+  background-color: var(--md-default-bg-color--lighter) !important;
+}
+
+.md-typeset .grid.borderless-cards hr {
+  display: none; /* Hide the line separating title from content */
+}
+
+.md-typeset .grid.borderless-cards h3 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  color: var(--md-primary-fg-color);
+}
+
+/* Clean pipeline blocks */
+.pipeline-block {
+  background: var(--md-code-bg-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
