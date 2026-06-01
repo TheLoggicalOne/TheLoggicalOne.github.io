@@ -88,7 +88,8 @@ markdown_extensions:
       permalink: true
 
 extra_css:
-  - docs/css/custom.css
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+  - css/home-theme.css
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
