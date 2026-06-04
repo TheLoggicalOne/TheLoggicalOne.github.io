@@ -1,0 +1,84 @@
+/* Import modern typography */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* Apply fonts */
+body, .md-typeset { font-family: 'Inter', sans-serif; }
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .hero-title {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+  border-bottom: none !important;
+}
+
+/* --- Full Width Section Wrappers --- */
+.section-wrapper {
+  padding: 5rem 1rem;
+  margin: 0 calc(-50vw + 50%); /* Forces full width in MkDocs */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.section-inner {
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Background Color Themes */
+.bg-white { background-color: var(--md-default-bg-color); }
+.bg-light { background-color: rgba(128, 128, 128, 0.05); }
+.bg-dark { 
+  background-color: #0f1115; 
+  color: rgba(255, 255, 255, 0.7);
+}
+.bg-dark h2, .bg-dark h3, .bg-dark strong { color: #ffffff !important; }
+
+/* --- Hero Section --- */
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem) !important;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: var(--md-primary-fg-color);
+}
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  max-width: 800px;
+}
+.hero-tags {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.9rem;
+  color: var(--md-primary-fg-color);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* --- Premium Cards Styling --- */
+.md-typeset .grid.cards > ul > li {
+  background: var(--md-default-bg-color);
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  padding: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+.bg-dark .md-typeset .grid.cards > ul > li {
+  background: #1a1d24;
+  border-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* --- Section Eyebrows --- */
+.eyebrow {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--md-primary-fg-color);
+  margin-bottom: 1rem;
+}
+.bg-dark .eyebrow { color: #00c48c; } /* Decidora-style accent on dark bg */
