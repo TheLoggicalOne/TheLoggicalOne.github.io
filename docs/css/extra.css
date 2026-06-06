@@ -1,0 +1,159 @@
+/* ============================================
+   DECIDORA-STYLE HOMEPAGE FOR MKDOCS
+   ============================================ */
+
+/* 1. Decidora Color Palette & Typography */
+:root {
+  --di-bg-light: #f5f9f6;      /* Decidora page-bg */
+  --di-bg-dark: #0b1e14;       /* Decidora forest */
+  --di-bg-card-dark: #112318;  /* Decidora forest-mid */
+  --di-text-dark: #0c1a11;     /* Decidora d-ink */
+  --di-text-light: #e4f9f2;    /* Decidora emerald-pale */
+  --di-text-muted: #627a6c;    /* Decidora d-muted */
+  --di-accent: #00c48c;        /* Decidora emerald */
+  --di-accent-dark: #1c7a54;   /* Decidora green */
+  --di-border-light: #ccddd5;  /* Decidora d-border */
+  --di-border-dark: #1a3526;   /* Decidora forest-lt */
+}
+
+/* 2. The "Breakout" Trick: Makes sections stretch edge-to-edge */
+.di-section {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5rem 2rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+.di-section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 3. Section Backgrounds (The "8 Pages" Feel) */
+.di-section-light {
+  background-color: var(--di-bg-light);
+  color: var(--di-text-dark);
+}
+
+.di-section-dark {
+  background-color: var(--di-bg-dark);
+  color: var(--di-text-light);
+}
+
+/* 4. Override MkDocs defaults inside our custom HTML */
+.di-section h1, .di-section .di-h1 { font-size: 3.5rem; font-weight: 700; line-height: 1.1; margin: 0 0 1.5rem 0; letter-spacing: -0.02em; color: inherit; border: none; }
+.di-section h2, .di-section .di-h2 { font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin: 0 0 2rem 0; letter-spacing: -0.01em; color: inherit; border: none; }
+.di-section h3, .di-section .di-card-title, .di-section .di-audience-title, .di-section .di-stage-title { font-size: 1.4rem; font-weight: 700; margin: 0 0 1rem 0; color: inherit; }
+.di-section p, .di-section .di-lead, .di-section .di-sublead, .di-section .di-card-text, .di-section .di-audience-text, .di-section .di-stage-desc { margin: 0 0 1rem 0; color: inherit; font-size: 1.05rem; line-height: 1.7; }
+.di-section ul, .di-section ol { margin: 0 0 1rem 0; padding-left: 0; list-style: none; }
+.di-section a { color: var(--di-accent); text-decoration: none; font-weight: 600; transition: color 0.2s; }
+.di-section a:hover { color: var(--di-accent-dark); text-decoration: none; }
+
+/* 5. Core Typography Classes */
+.di-eyebrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--di-accent);
+  margin-bottom: 1rem;
+}
+
+.di-accent {
+  color: var(--di-accent);
+  font-style: italic;
+}
+
+.di-lead { font-size: 1.25rem; font-weight: 500; margin-bottom: 1rem; }
+.di-sublead { font-size: 1.1rem; opacity: 0.8; margin-bottom: 2rem; }
+
+/* 6. Buttons */
+.di-buttons { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+.di-btn {
+  display: inline-block; padding: 0.8rem 1.8rem; border-radius: 6px;
+  font-weight: 600; font-size: 1rem; text-decoration: none;
+  transition: all 0.2s ease; border: 2px solid transparent; cursor: pointer;
+}
+.di-btn-primary { background-color: var(--di-accent); color: var(--di-bg-dark); border-color: var(--di-accent); }
+.di-btn-primary:hover { background-color: transparent; color: var(--di-accent); }
+.di-btn-secondary { background-color: transparent; color: var(--di-text-dark); border-color: var(--di-border-light); }
+.di-btn-secondary:hover { border-color: var(--di-accent); color: var(--di-accent); }
+.di-btn-outline-light { background-color: transparent; color: var(--di-text-light); border-color: var(--di-border-dark); }
+.di-btn-outline-light:hover { border-color: var(--di-accent); color: var(--di-accent); }
+
+/* 7. Layout Grids */
+.di-hero-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: center; }
+.di-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+.di-three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.di-two-col-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+
+/* 8. Hero Pillars (Right side of Hero) */
+.di-hero-right { display: flex; flex-direction: column; gap: 1.5rem; }
+.di-pillar {
+  background-color: #ffffff; border: 1px solid var(--di-border-light);
+  border-radius: 8px; padding: 1.5rem; transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.di-pillar:hover { transform: translateY(-4px); border-color: var(--di-accent); }
+.di-pillar-label { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--di-accent-dark); margin-bottom: 0.5rem; }
+.di-pillar-text { font-size: 1.1rem; font-weight: 500; color: var(--di-text-dark); line-height: 1.4; margin: 0; }
+
+/* 9. Callout Box (Dark Section) */
+.di-col-callout {
+  background-color: var(--di-bg-card-dark); border: 1px solid var(--di-border-dark);
+  border-radius: 12px; padding: 2.5rem;
+}
+.di-callout-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--di-accent); }
+.di-callout-list li { position: relative; padding-left: 1.5rem; margin-bottom: 1rem; font-size: 1.05rem; }
+.di-callout-list li::before { content: "—"; position: absolute; left: 0; color: var(--di-accent); font-weight: bold; }
+.di-callout-footer { font-size: 1rem; font-style: italic; opacity: 0.8; border-top: 1px solid var(--di-border-dark); padding-top: 1.5rem; margin: 0; }
+
+/* 10. Cards (Light Section) */
+.di-card, .di-audience-card {
+  background-color: #ffffff; border: 1px solid var(--di-border-light);
+  border-radius: 12px; padding: 2rem; transition: all 0.3s ease;
+  display: flex; flex-direction: column;
+}
+.di-card:hover, .di-audience-card:hover { transform: translateY(-8px); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); border-color: var(--di-accent); }
+.di-card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+.di-card-title, .di-audience-title { font-size: 1.4rem; font-weight: 700; margin: 0 0 1rem 0; color: var(--di-text-dark); }
+.di-card-text, .di-audience-text { font-size: 1rem; line-height: 1.6; color: var(--di-text-muted); flex-grow: 1; margin-bottom: 1.5rem; }
+.di-card-text code { background-color: rgba(0, 196, 140, 0.1); color: var(--di-accent-dark); padding: 0.1em 0.4em; border-radius: 4px; font-size: 0.9em; font-weight: 600; }
+.di-card-link { font-weight: 600; color: var(--di-accent-dark); }
+.di-card-link:hover { color: var(--di-accent); }
+
+/* 11. Stages Visual (Dark Section) */
+.di-stages { display: flex; flex-direction: column; gap: 1.5rem; }
+.di-stage {
+  background-color: var(--di-bg-card-dark); border: 1px solid var(--di-border-dark);
+  border-radius: 8px; padding: 1.5rem; transition: all 0.3s ease;
+}
+.di-stage-current { border-color: var(--di-accent); background-color: rgba(0, 196, 140, 0.05); }
+.di-stage-goal { border-color: var(--di-accent); background-color: rgba(0, 196, 140, 0.1); box-shadow: 0 0 20px rgba(0, 196, 140, 0.2); }
+.di-stage-num { font-size: 0.8rem; font-weight: 700; color: var(--di-accent); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+.di-stage-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+.di-stage-desc { font-size: 0.95rem; opacity: 0.8; line-height: 1.5; margin: 0; }
+
+/* 12. Audience Lists */
+.di-audience-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.8rem; font-size: 1rem; font-weight: 500; }
+.di-audience-list li::before { content: "✓"; position: absolute; left: 0; color: var(--di-accent); font-weight: bold; }
+
+/* 13. Closing Section */
+.di-center { text-align: center; }
+.di-center .di-buttons { justify-content: center; }
+.di-closing-h2 { font-size: 3rem; max-width: 800px; margin: 0 auto 1.5rem auto; }
+.di-closing-sub { font-size: 1.2rem; opacity: 0.8; margin-bottom: 2rem; }
+
+/* 14. Responsive Design */
+@media (max-width: 900px) {
+  .di-h1, .di-section h1 { font-size: 2.5rem; }
+  .di-h2, .di-section h2 { font-size: 2rem; }
+  .di-closing-h2 { font-size: 2.2rem; }
+  .di-hero-grid, .di-two-col, .di-three-col, .di-two-col-cards { grid-template-columns: 1fr; gap: 2rem; }
+  .di-section { padding: 3rem 1.5rem; }
+}
