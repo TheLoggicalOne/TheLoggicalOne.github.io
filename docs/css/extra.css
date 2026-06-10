@@ -1,4 +1,31 @@
 /* ============================================
+   1. OVERRIDE MKDOCS MATERIAL THEME COLORS
+   ============================================ */
+
+/* Light Mode (default) */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #0b1e14;       /* Header background: Deep Forest */
+  --md-primary-fg-color--light: #1c7a54;/* Header hover states */
+  --md-primary-fg-color--dark: #05100a; /* Header active states */
+  --md-accent-fg-color: #00c48c;        /* Links and highlights: Emerald */
+  --md-accent-fg-color--transparent: #00c48c1a;
+}
+
+/* Dark Mode (slate) */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0b1e14;       /* Header background: Deep Forest */
+  --md-primary-fg-color--light: #1c7a54;
+  --md-primary-fg-color--dark: #05100a;
+  --md-accent-fg-color: #00c48c;        /* Links and highlights: Emerald */
+  --md-accent-fg-color--transparent: #00c48c1a;
+  
+  /* Optional: Make the dark mode background slightly green-tinted instead of pure grey/blue */
+  --md-default-bg-color: #05100a; 
+  --md-default-fg-color: #e4f9f2;
+}
+
+
+/* ============================================
    DECIDORA-STYLE HOMEPAGE FOR MKDOCS
    ============================================ */
 
@@ -156,4 +183,43 @@
   .di-closing-h2 { font-size: 2.2rem; }
   .di-hero-grid, .di-two-col, .di-three-col, .di-two-col-cards { grid-template-columns: 1fr; gap: 2rem; }
   .di-section { padding: 3rem 1.5rem; }
+}
+
+/* ============================================
+   3. FIXED BUTTON STYLES (High Contrast)
+   ============================================ */
+
+/* Primary Button: Emerald Background, Deep Ink Text */
+.di-btn-primary {
+  background-color: #00c48c !important; /* Emerald */
+  color: #0c1a11 !important;            /* Deep Ink (Dark text for contrast) */
+  border: 2px solid #00c48c !important;
+  font-weight: 700 !important;
+}
+.di-btn-primary:hover {
+  background-color: transparent !important;
+  color: #00c48c !important;
+  border-color: #00c48c !important;
+}
+
+/* Secondary Button (Light mode): Dark text, light border */
+.di-btn-secondary {
+  background-color: transparent;
+  color: #0c1a11 !important; 
+  border: 2px solid #ccddd5 !important;
+}
+.di-btn-secondary:hover {
+  border-color: #00c48c !important;
+  color: #00c48c !important;
+}
+
+/* Outline Button (Dark sections): Light text, dark border */
+.di-btn-outline-light {
+  background-color: transparent;
+  color: #e4f9f2 !important; /* Emerald Pale (Light text) */
+  border: 2px solid #1a3526 !important;
+}
+.di-btn-outline-light:hover {
+  border-color: #00c48c !important;
+  color: #00c48c !important;
 }

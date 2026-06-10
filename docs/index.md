@@ -80,19 +80,19 @@ hide:
         <div class="di-card-icon">📉</div>
         <h3 class="di-card-title">The Flaw of Averages</h3>
         <p class="di-card-text">Decision-makers optimize for the "most likely" scenario. But <code>E[f(x)] ≠ f(E[x])</code>. Averages systematically break nonlinear systems. Point predictions are lies about certainty.</p>
-        <a href="/articles/flaw-of-averages" class="di-card-link">Explore the flaw →</a>
+        <a href="/articles/flaw_of_averages/" class="di-card-link">Explore the flaw →</a>
       </div>
       <div class="di-card">
         <div class="di-card-icon">🥗</div>
         <h3 class="di-card-title">Causal Salads</h3>
         <p class="di-card-text">Organizations optimize metrics whose relationship to real utility is poorly understood. Disconnected KPIs and proxy objectives create fragile, misleading decisions.</p>
-        <a href="/articles/causal-salad" class="di-card-link">Identify the salad →</a>
+        <a href="/articles/causal_salad/" class="di-card-link">Identify the salad →</a>
       </div>
       <div class="di-card">
         <div class="di-card-icon">🌍</div>
         <h3 class="di-card-title">Distribution Shift</h3>
         <p class="di-card-text">A decision changes the world. Therefore, the prediction problem after intervention differs from the problem before. Black-box ML fails when the data-generating process shifts.</p>
-        <a href="/articles/distribution-shift" class="di-card-link">Understand the shift →</a>
+        <a href="/articles/distribution_shift/" class="di-card-link">Understand the shift →</a>
       </div>
     </div>
   </div>
@@ -109,7 +109,7 @@ hide:
       <div class="di-col-text">
         <p>Most organizations are stuck between Stage 3 and Stage 4. They have data, dashboards, and ML models, but they lack structural understanding and counterfactual reasoning.</p>
         <p>My work focuses on helping organizations evolve to <strong>Stage 5: Structural Decision Intelligence</strong>, where causal structure, uncertainty, utility, and interventions are explicitly modeled.</p>
-        <a href="/articles/six-stages" class="di-btn di-btn-outline-light">Read the full framework →</a>
+        <a href="/articles/six_stages/" class="di-btn di-btn-outline-light">Read the full framework →</a>
       </div>
       <div class="di-stages">
         <div class="di-stage">
